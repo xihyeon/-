@@ -1,0 +1,81 @@
+.col_1 {
+  width: 6.5%;
+}
+
+.col_2 {
+  width: 15%;
+}
+
+.col_3 {
+  width: 23.5%;
+}
+
+.col_4 {
+  width: 32%;
+}
+
+.col_5 {
+  width: 40.5%;
+}
+
+.col_6 {
+  width: 49%;
+}
+
+.col_7 {
+  width: 57.5%;
+}
+
+.col_8 {
+  width: 66%;
+}
+
+.col_9 {
+  width: 74.5%;
+}
+
+.col_10 {
+  width: 83%;
+}
+
+.col_11 {
+  width: 91.5%;
+}
+
+.col_12 {
+  width: 100%;
+}
+
+#wrap {
+  width: 1152px;
+  margin: 0 auto;
+}
+
+.row {
+  overflow: hidden;
+  width: 100%;
+}
+
+.row [class^=col] {
+  float: left;
+  margin-left: 2%;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+.row [class^=col]:first-child {
+  margin-left: 0;
+}
+
+.main #header #top_area .row .rogo {
+  overflow: hidden;
+}
+
+.main #header #top_area .row .rogo a {
+  display: block;
+  width: 105px;
+  height: 27px;
+  background-image: url("../img/res_soule/icon_set.png");
+  background-repeat: no-repeat;
+  background-position: -5px -165px;
+}

@@ -1,0 +1,51 @@
+#wrap{
+  width: $siteWidth;
+  margin: 0 auto;
+}
+
+//mixin으로 설정해둔 값 넣을때.
+.row{
+  overflow: hidden;
+  width: 100%;
+  [class^=col]{
+    float: left;
+    margin-left: $gutterWidth;
+    box-sizing: border-box;
+    border: 1px solid red;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+}
+
+//layout clas
+
+.main{
+  #header{
+    #top_area{
+      .row{
+        .rogo{
+          overflow: hidden;
+          a{
+            display: block;
+            width: 105px;
+            height: 27px;
+            background-image: url("../img/res_soule/icon_set.png");
+            background-repeat: no-repeat;
+            background-position: -5px -165px;
+          }//a
+        }//rogo
+        #gnb{
+          .main_menu{
+            li{
+              a{
+                font-weight: 400;
+                
+              }
+            }//li
+          }//ul.main_menu
+        }//gnb
+      }//row
+    }//top area
+  }//header
+}//main
