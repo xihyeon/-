@@ -2,12 +2,14 @@ $columWidth: 6.5%;
 $gutterWidth: 2%;
 
 //mixin 설정
+//col mixin
 @mixin col($count) {
   width: ($columWidth * $count) + ($gutterWidth * ($count - 1));
 }
 
 
 //mixin 적용
+//col mixin
 .col_1{ @include col(1);}
 .col_2{ @include col(2);}
 .col_3{ @include col(3);}

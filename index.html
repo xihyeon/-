@@ -16,13 +16,12 @@
  </head>
 
  <body>
-   <div id="wrap" class="main">
+   <div id="wrap">
      <header id="header">
         <div id="top_area">
-          <div class="row">
-            <h1 class="rogo"><a href="index.html"></a></h1>
             <nav id="gnb">
-              <ul id="main_menu">
+              <h1 class="logo"><a href="index.html"></a></h1>
+              <ul id="menu_left">
                 <li><a href="#">서울소식</a></li>
                 <li><a href="#">시민참여</a></li>
                 <li><a href="#">분야별정보</a></li>
@@ -31,25 +30,84 @@
                 <li><a href="#">정보공개</a></li>
                 <li><a href="#">응답소</a></li>
               </ul>
-              <ul id="my_menu">
-                <li><a href="#">menu1</a></li>
-                <li><a href="#">menu2</a></li>
-                <li><a href="#">menu3</a></li>
+              <ul id="menu_right">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">나의서울</a></li>
+                <li><a href="#">전자우편</a></li>
               </ul>
             </nav>
-          </div>
         </div>
-        <div id="search_area">
-          <div class="inner">
-            <h1><a href="#">ISeQuL-U</a></h1>
-            <div id="search">
-              <form action=""></form>
+        <div id="surch_box">
+          <div class="surch_inner">
+            <h1 class="surch_logo"><a href="index.html" ></a></h1>
+            <div class="surch">
+              <input type="text" id="inp_Topsurch" placeholder="검색어를 입력해 주세요">
+              <img src="img/res_soule/kebord.png" alt="v_kebord">
+              <button class="btn_TopSearch"></button>
+            </div>
+            <!-- leng -->
+            <div id="lang_site">
+              <label for="siteLeng"></label>
+              <select class="siteLeng" name="siteLeng">
+                <option value="en">ENGLISH</option>
+                <option value="js">日本語</option>
+                <option value="ch">简体中文</option>
+                <option value="ch2">繁体中文</option>
+                <option value="ch2">français</option>
+              </select>
+              <input type="button" value="GO" class="select_btn">
+            </div>
+            <!-- 날씨 -->
+            <div class="info_weather">
+              <div class="txt_area">
+                  <p>
+                    <a href="#">
+                      <strong class="w_deg">-15ºC</strong>
+                      <span class="w_txt1">서울시</span>
+                    </a>
+                  </p>
+                  <p>
+                    <a href="#">
+                      <span class="w_txt2">미세먼지(좋음) 초미세먼지(보통)</span>
+                    </a>
+                  </p>
+              </div>
             </div>
           </div>
         </div>
-        <div id="site_lang"></div>
-        <div id="info_weather"></div>
      </header>
+     <main>
+        <div class="inner">
+          <section class="sec1">
+              <div class="slide">
+                <!-- 주요뉴스 -->
+
+                <!-- //주요뉴스 -->
+              </div>
+              <div class="corona_wrap">
+                
+              </div>
+          </section>
+        </div>
+     </main>
+     <footer>
+       <div class="inner">
+         <div class="siteAddr">
+           <ul>
+             <li>문의</li>
+           </ul>
+           <ul>
+             <li>서울특별시청&npsp;04524&nbsp;서울특별시&nbsp;중구&nbsp;세종대로&nbsp;110&nbsp;[찾아오시는길]</li>
+             <li>대표전화:02-120또는02-731-2120</li>
+             <li>ⓒSeoul Metropolitan Govermment all rights reserved</li>
+           </ul>
+           <ul>
+             <li><a href="#">ism로고</a></li>
+             <li><a href="#">Wa로고</a></li>
+           </ul>
+         </div>
+       </div>
+     </footer>
    </div>
 
  </body>
