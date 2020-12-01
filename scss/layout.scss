@@ -220,6 +220,7 @@ body{ font-family: 'Noto Sans KR', sans-serif; letter-spacing: 3px;}
         }
       }
     }//header
+    //section
   .sec1{
     height: 350px;
     overflow: hidden;
@@ -237,6 +238,17 @@ body{ font-family: 'Noto Sans KR', sans-serif; letter-spacing: 3px;}
       height: 350px;
       background: blue;
     }
+  }
+  .sec2{
+    position: relative;
+    padding: 50px 0 0;
+    height: 152px;
+    background: skyblue;
+  }
+  .sec3{
+    margin-top: 38px;
+    height: 111px;
+    background: #eff4f8;
   }
 }//wrap
 
