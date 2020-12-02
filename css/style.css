@@ -333,6 +333,36 @@ body {
   background: #eff4f8;
 }
 
+#wrap .sec4 {
+  height: 230px;
+  padding: 60px 0;
+  background: pink;
+}
+
+#wrap .sec5 {
+  height: 230px;
+  padding: 60px 0;
+  background: green;
+}
+
+#wrap .sec6 {
+  height: 700px;
+  padding: 20px 0 0;
+  background: yellow;
+}
+
+#wrap .sec7 {
+  height: 249px;
+  padding-bottom: 30px;
+  background: orange;
+}
+
+#wrap .sec7 .sec8 {
+  height: 202px;
+  padding: 50px 0;
+  background: pink;
+}
+
 .ico_main {
   background: url("../img/res_soule/ico_main.png");
 }
