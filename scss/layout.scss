@@ -266,16 +266,30 @@ body{ font-family: 'Noto Sans KR', sans-serif; letter-spacing: 3px;}
     background: yellow;
   }
   .sec7{
-    height: 249px;
-    padding-bottom: 30px;
-    background: orange;
-
-  .sec8{
-    height: 202px;
-    padding: 50px 0;
-    background: pink;
+    .slide{
+      position: relative;
+      padding: 50px 0 50px 0;
+      border-top: #e9e9e9;
+      box-sizing: border-box;
+      .main_banner{
+        position: relative;
+        .mb_wrapper{
+          height: 122px;
+          background: pink;
+        }
+      }
+    }
   }
-}
+
+  footer{
+    .inner{
+      .footer_link{
+        height: 12px;
+        padding: 20px 0 0 ;
+        background: orange;
+      }
+    }
+  }
 }//wrap
 
 // slide section
