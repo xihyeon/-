@@ -58,6 +58,12 @@ a {
   margin: 0 auto;
 }
 
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
 body {
   font-family: 'Noto Sans KR', sans-serif;
   letter-spacing: 3px;
@@ -346,9 +352,76 @@ body {
 }
 
 #wrap .sec6 {
-  height: 700px;
-  padding: 20px 0 0;
+  min-height: 700px;
+  padding: 50px 0 0 0;
   background: yellow;
+  position: relative;
+  overflow: hidden;
+}
+
+#wrap .sec6 .board_area {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+#wrap .sec6 .board_area section {
+  position: relative;
+  width: 273px;
+  height: 271px;
+  float: left;
+  position: relative;
+  box-sizing: border-box;
+  background: pink;
+  overflow: hidden;
+}
+
+#wrap .sec6 .board_area section .img_area {
+  position: relative;
+  width: 100%;
+  height: 188px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+#wrap .sec6 .board_area section .img_area .img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url("../img/new_card/new_card01.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: .5s;
+  transform: scale(1);
+}
+
+#wrap .sec6 .board_area section .img_area .img:hover {
+  transform: scale(1.1);
+}
+
+#wrap .sec6 .board_area section .img_area .new_box {
+  position: absolute;
+  bottom: 0;
+  width: 82px;
+  height: 32px;
+  color: #fff;
+  text-align: center;
+  line-height: 32px;
+  z-index: 1;
+  background: #c35c3c;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#wrap .sec6 .board_area section .description {
+  float: left;
+  font-size: 16px;
+  margin-bottom: 20px;
+  letter-spacing: -2.5px;
+  padding: 0 20px;
+  line-height: 1.6rem;
 }
 
 #wrap .sec7 .slide {
@@ -381,5 +454,4 @@ body {
   width: 355px;
   height: 122px;
   border: 0;
-  background: red;
 }
