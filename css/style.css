@@ -130,7 +130,7 @@ body {
 
 #wrap #header #top_area #gnb #menu_left {
   float: left;
-  font-weight: 800;
+  font-weight: 600;
   padding-left: 22px;
 }
 
@@ -359,71 +359,6 @@ body {
   overflow: hidden;
 }
 
-#wrap .sec6 .board_area {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 0;
-}
-
-#wrap .sec6 .board_area section {
-  position: relative;
-  width: 273px;
-  height: 271px;
-  float: left;
-  position: relative;
-  box-sizing: border-box;
-  background: pink;
-  overflow: hidden;
-}
-
-#wrap .sec6 .board_area section .img_area {
-  position: relative;
-  width: 100%;
-  height: 188px;
-  overflow: hidden;
-  margin-bottom: 15px;
-}
-
-#wrap .sec6 .board_area section .img_area .img {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  background-image: url("../img/new_card/new_card01.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: .5s;
-  transform: scale(1);
-}
-
-#wrap .sec6 .board_area section .img_area .img:hover {
-  transform: scale(1.1);
-}
-
-#wrap .sec6 .board_area section .img_area .new_box {
-  position: absolute;
-  bottom: 0;
-  width: 82px;
-  height: 32px;
-  color: #fff;
-  text-align: center;
-  line-height: 32px;
-  z-index: 1;
-  background: #c35c3c;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-#wrap .sec6 .board_area section .description {
-  float: left;
-  font-size: 16px;
-  margin-bottom: 20px;
-  letter-spacing: -2.5px;
-  padding: 0 20px;
-  line-height: 1.6rem;
-}
-
 #wrap .sec7 .slide {
   position: relative;
   padding: 50px 0 50px 0;
@@ -448,6 +383,173 @@ body {
 
 .ico_main {
   background: url("../img/res_soule/ico_main.png");
+}
+
+.board_area {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.board_area section {
+  position: relative;
+  width: 273px;
+  height: 271px;
+  float: left;
+  position: relative;
+  box-sizing: border-box;
+  background: pink;
+  overflow: hidden;
+}
+
+.board_area section .img_area {
+  position: relative;
+  width: 100%;
+  height: 188px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.board_area section .img_area .img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/new_card/new_card01.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: .5s;
+  transform: scale(1);
+  overflow: hidden;
+}
+
+.board_area section .img_area .img:hover {
+  transform: scale(1.1);
+}
+
+.board_area section .img_area .new_box {
+  position: absolute;
+  bottom: 0;
+  width: 82px;
+  height: 32px;
+  color: #fff;
+  text-align: center;
+  line-height: 32px;
+  z-index: 1;
+  font-size: 14px;
+  overflow: hidden;
+  font-weight: 600;
+}
+
+.board_area section .description {
+  float: left;
+  font-size: 16px;
+  margin-bottom: 20px;
+  letter-spacing: -2.5px;
+  line-height: 1.6rem;
+  word-break: break-all;
+}
+
+.board_area1 h2 {
+  padding-bottom: 20px;
+}
+
+.board_area1 section {
+  position: relative;
+  width: 273px;
+  height: 271px;
+  float: left;
+  position: relative;
+  box-sizing: border-box;
+  background: pink;
+  overflow: hidden;
+}
+
+.board_area1 section .img_area {
+  position: relative;
+  width: 100%;
+  height: 188px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.board_area1 section .img_area .img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url("../img/new_card/new_card01.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: .5s;
+  transform: scale(1);
+}
+
+.board_area1 section .img_area .img:hover {
+  transform: scale(1.1);
+}
+
+.board_area1 section .img_area .new_box {
+  position: absolute;
+  bottom: 0;
+  width: 82px;
+  height: 32px;
+  color: #fff;
+  text-align: center;
+  line-height: 32px;
+  z-index: 1;
+  background: #c35c3c;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.board_area1 section .description {
+  float: left;
+  font-size: 16px;
+  margin-bottom: 20px;
+  letter-spacing: -2.5px;
+  line-height: 1.6rem;
+}
+
+.borard_area section .img_area:nth-child(2) .img {
+  background: url("../img/new_card02.jpg");
+}
+
+.new_work {
+  background: #028ab6;
+}
+
+.new_well {
+  background: #d76000;
+}
+
+.new_cul {
+  background: #9b64d3;
+}
+
+.new_home {
+  background: #c35c3c;
+}
+
+.sec6 > .img:nth-child(1) {
+  background: url("../img/new_card/new_card0.jpg");
+}
+
+.se6 > .img:nth-child(2) {
+  background: url("../img/new_card/new_card02.jpg");
+}
+
+.se6 > .img:nth-child(3) {
+  background: url("../img/new_card/new_card03.jpg");
+}
+
+.se6 > .img:nth-child(4) {
+  background: url("../img/new_card/new_card04.jpg");
+}
+
+.se6 > .img:nth-child(5) {
+  background: url("../img/new_card/new_card05.jpg");
 }
 
 .bx-wrapper {
