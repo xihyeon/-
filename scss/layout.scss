@@ -1,13 +1,22 @@
 //initial
+::selection{
+  background: #599100;
+  color: #f1f1f1;
+  text-shadow: none;
+}
 .inner{
   width: $siteWidth;
   overflow: hidden;
   height: auto;
   margin: 0 auto;
 }
+section{
+  border: 0;
+}
 h2{
   font-size: 24px;
   font-weight: 600;
+  letter-spacing: -2.5px;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -268,7 +277,6 @@ body{ font-family: 'Noto Sans KR', sans-serif; letter-spacing: 3px;}
   .sec6{
     min-height: 700px;
     padding: 50px 0 0 0;
-    background: yellow;
     position: relative;
     overflow: hidden;
   }

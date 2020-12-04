@@ -10,8 +10,6 @@
     height: 271px;
     float: left;
     position: relative;
-    box-sizing: border-box;
-    background: pink;
     overflow: hidden;
 
     .img_area{
@@ -24,15 +22,14 @@
         position: relative;
         width: 100%;
         height: 100%;
-        background-image: url("../img/new_card/new_card01.jpg");
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
         transition: .5s;
-        transform: scale(1.0);
+        transform: scale(1.1);
         overflow: hidden;
         &:hover{
-          transform: scale(1.1);
+          transform: scale(1.2);
         }
       }//img
       .new_box{
@@ -69,8 +66,6 @@
     height: 271px;
     float: left;
     position: relative;
-    box-sizing: border-box;
-    background: pink;
     overflow: hidden;
 
     .img_area{
@@ -78,6 +73,7 @@
       width: 100%;
       height: 188px;
       overflow: hidden;
+      border: 0;
       margin-bottom: 15px;
       .img{
         width: 100%;
@@ -89,6 +85,7 @@
         background-size: cover;
         transition: .5s;
         transform: scale(1.0);
+        border: 0;
         &:hover{
           transform: scale(1.1);
 
@@ -117,12 +114,63 @@
     }
   }//section
 }
-
 //이미지 끼우기
-.borard_area{
-  section{
-    .img_area:nth-child(2) .img{
-        background: url("../img/new_card02.jpg");
+.img{
+  &.img01{
+    background: url("../img/new_card/new_card01.jpg");
+  }
+  &.img02{
+    background: url("../img/new_card/new_card02.jpg");
+  }
+  &.img03{
+    background: url("../img/new_card/new_card03.jpg");
+  }
+  &.img04{
+    background: url("../img/new_card/new_card04.jpg");
+  }
+  &.img05{
+    background: url("../img/new_card/new_card05.jpg");
+  }
+  &.img06{
+    background: url("../img/new_card/new_card06.jpg");
+  }
+  &.img07{
+    background: url("../img/new_card/new_card07.jpg");
+  }
+  &.img08{
+    background: url("../img/new_card/new_card08.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+//서울 영상 img class 재할당
+.board_area1 section{
+    min-width: 280px;
+    min-height: 152px;
+  .img_area{
+    box-sizing: border-box;
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+    .img{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      &.img09{
+        background: url("../img/new_card/new_card09.jpg");
+      }
+    }
+    .text{
+      position: absolute;
+      width: 100%;
+      height: 32px;
+      overflow: hidden;
+      font-size: 16px;
+      font-weight: 700;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: inline-block;
     }
   }
 }
@@ -139,19 +187,13 @@
 .new_home{
   background: #c35c3c;
 }
+.new_soule{
+  background: #000;
+  opacity: .7;
+}
+//sec6 end
 
-.sec6 > .img:nth-child(1){
-  background: url("../img/new_card/new_card0.jpg");
-}
-.se6 > .img:nth-child(2){
-  background: url("../img/new_card/new_card02.jpg");
-}
-.se6 > .img:nth-child(3){
-  background: url("../img/new_card/new_card03.jpg");
-}
-.se6 > .img:nth-child(4){
-  background: url("../img/new_card/new_card04.jpg");
-}
-.se6 > .img:nth-child(5){
-  background: url("../img/new_card/new_card05.jpg");
+//text ellipsis
+.text{
+
 }
