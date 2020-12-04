@@ -63,7 +63,7 @@
   section{
     position: relative;
     width: 273px;
-    height: 271px;
+    height: 152px;
     float: left;
     position: relative;
     overflow: hidden;
@@ -116,6 +116,7 @@
 }
 //이미지 끼우기
 .img{
+  cursor: pointer;
   &.img01{
     background: url("../img/new_card/new_card01.jpg");
   }
@@ -146,14 +147,16 @@
 }
 //서울 영상 img class 재할당
 .board_area1 section{
-    min-width: 280px;
-    min-height: 152px;
+    width: 280px;
+    height: 220px;
+    padding: 0 20px 0 0;
   .img_area{
     box-sizing: border-box;
     position: relative;
     height: 150px;
     overflow: hidden;
     .img{
+      cursor: pointer;
       position: relative;
       width: 100%;
       height: 100%;
@@ -163,12 +166,18 @@
     }
     .text{
       position: absolute;
-      width: 100%;
-      height: 32px;
+      width: 280px;
+      height: 27px;
+      left: 0;
+      box-sizing: border-box;
+      bottom: 0;
+      color: #f1f1f1;
+      background: rgba(000,000,000,.5);
       overflow: hidden;
       font-size: 16px;
-      font-weight: 700;
+      font-weight: 500;
       overflow: hidden;
+      white-space: nowrap;
       text-overflow: ellipsis;
       display: inline-block;
     }
@@ -194,6 +203,3 @@
 //sec6 end
 
 //text ellipsis
-.text{
-
-}
