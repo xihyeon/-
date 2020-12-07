@@ -202,4 +202,34 @@
 }
 //sec6 end
 
-//text ellipsis
+// 게시글 테이블
+p{
+  margin-top: 5px;
+  &:first-child{
+    margin-top: 0;
+  }
+  .grenn{
+    font-size: 16px;
+    color: #09ac43;
+    font-weight: 400;
+    margin-right: 18px;
+  }
+  .n_item{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+  }
+}
+
+// 전체보기 +
+.all{
+  position: absolute;
+  background: url("../img/res_soule/icon_set.png") no-repeat 0 -259px;
+  right: 0;
+  a{
+    font-size: 15px;
+    color: #7d7d7d;
+    display: inline-block;
+    width: 100%;
+    }
+}
