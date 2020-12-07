@@ -336,12 +336,14 @@ body {
   float: right;
   width: 360px;
   height: 350px;
+  background: url("../img/res_soule/bg_forona_pc.jpg");
+  background-size: cover;
 }
 
 #wrap .sec2 {
   position: relative;
   padding: 50px 0 0;
-  height: 152px;
+  min-height: 152px;
 }
 
 #wrap .sec2 h2 {
@@ -349,36 +351,84 @@ body {
   padding-bottom: 10px;
 }
 
-#wrap .sec2 ul {
-  margin-top: 10px;
+#wrap .sec2 .m_service {
+  overflow: hidden;
+}
+
+#wrap .sec2 .m_service ul {
+  display: table;
+  width: 100%;
+  margin-top: 50px;
+  margin: 0 auto;
+}
+
+#wrap .sec2 .m_service ul li {
+  margin-top: 20px;
   height: 90px;
-  margin-left: -3px;
+  display: table-cell;
+  text-align: center;
+}
+
+#wrap .sec2 .m_service ul li a {
+  display: block;
+  padding-top: 20px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+
+#wrap .sec2 .m_service ul li a .ico_service {
+  display: block;
+  width: 60px;
+  height: 50px;
+  margin: 0 auto 10px;
+  background: url("../img/res_soule/icon_set_service_new.png") no-repeat;
   box-sizing: border-box;
 }
 
-#wrap .sec2 ul li {
-  float: left;
-  width: 60px;
-  height: 60px;
-  margin-left: 40px;
-  background: url("../img/res_soule/icon_set_service_new.png") no-repeat;
+#wrap .sec2 .m_service ul li a .ico_service.s2_01 {
+  background-position: 0 0;
 }
 
-#wrap .sec2 ul li:first-child {
-  margin-left: 0;
+#wrap .sec2 .m_service ul li a .ico_service.s2_02 {
+  background-position: -60px 0;
 }
 
-#wrap .sec2 ul li p {
-  width: 128px;
-  height: 100%;
+#wrap .sec2 .m_service ul li a .ico_service.s2_03 {
+  background-position: -120px 0;
 }
 
-#wrap .sec2 ul li p a {
-  width: 100%;
-  display: inline-block;
-  text-align: center;
-  font-size: 12px;
-  padding-top: 50px;
+#wrap .sec2 .m_service ul li a .ico_service.s2_04 {
+  background-position: -180px 0;
+}
+
+#wrap .sec2 .m_service ul li a .ico_service.s2_05 {
+  background-position: -840px 0;
+}
+
+#wrap .sec2 .m_service ul li a .ico_service.s2_06 {
+  background-position: -300px 0;
+}
+
+#wrap .sec2 .m_service ul li a .ico_service.s2_07 {
+  background-position: -360px 0;
+}
+
+#wrap .sec2 .m_service ul li a .ico_service.s2_08 {
+  background-position: -960px 0;
+}
+
+#wrap .sec2 .m_service ul li a .ico_service.s2_09 {
+  background-position: -780px 0;
+}
+
+#wrap .sec2 .m_service ul li a .ico_service.s2_10 {
+  background-position: -900px 0;
+}
+
+#wrap .sec2 .m_service ul li a .ico_service.s2_11 {
+  background-position: -600px 0;
 }
 
 #wrap .sec3 {
@@ -496,9 +546,10 @@ body {
 
 #wrap .sec6 {
   min-height: 700px;
-  padding: 50px 0 0 0;
+  padding: 50px 0 30px 0;
   position: relative;
   overflow: hidden;
+  border-bottom: 2px solid #efefef;
 }
 
 #wrap .sec6 .all {
