@@ -208,12 +208,30 @@ p{
   &:first-child{
     margin-top: 0;
   }
-  .grenn{
+  .tag{
     font-size: 16px;
-    color: #09ac43;
     font-weight: 400;
     margin-right: 18px;
+    &.grenn{
+      color: #09ac43;
+    }
+    &.eco_green{
+      color: #069363;
+    }
+    &.home2{
+      color: #c35c3c;
+    }
+    &.work{
+      color: #028ab6;
+    }
+    &.cat{
+      color: #9b64d3;
+    }
+    &.safe{
+      color: #e44869;
+    }
   }
+
   .n_item{
     white-space: nowrap;
     text-overflow: ellipsis;

@@ -232,11 +232,34 @@ p:first-child {
   margin-top: 0;
 }
 
-p .grenn {
+p .tag {
   font-size: 16px;
-  color: #09ac43;
   font-weight: 400;
   margin-right: 18px;
+}
+
+p .tag.grenn {
+  color: #09ac43;
+}
+
+p .tag.eco_green {
+  color: #069363;
+}
+
+p .tag.home2 {
+  color: #c35c3c;
+}
+
+p .tag.work {
+  color: #028ab6;
+}
+
+p .tag.cat {
+  color: #9b64d3;
+}
+
+p .tag.safe {
+  color: #e44869;
 }
 
 p .n_item {
