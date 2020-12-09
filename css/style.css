@@ -332,12 +332,126 @@ body {
   background: red;
 }
 
+#wrap .sec1 .slide .slide_content {
+  margin-left: 80px;
+}
+
+#wrap .sec1 .slide .slide_content h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 175px;
+}
+
+#wrap .sec1 .slide .slide_content h3 a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  background-color: #0158a8;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#wrap .sec1 .slide .slide_content h3 a.on {
+  background-color: #0158a8;
+  color: #fff;
+}
+
+#wrap .sec1 .slide .slide_content h3 a.on::after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  left: 99%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 0 25px 32px;
+  border-color: transparent transparent transparent #0158a8;
+  margin-top: -25px;
+}
+
+#wrap .sec1 .slide .slide_content h3 a .ico_main {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 10px;
+  background-color: #fff;
+  background-repeat: 0 0;
+  border-radius: 50%;
+}
+
+#wrap .sec1 .slide .slide_content h3 a .ico_main span {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  z-index: 100;
+  background: url("../img/res_soule/icon_main.png") no-repeat 0 0;
+}
+
 #wrap .sec1 .corona_wrap {
+  position: relative;
   float: right;
   width: 360px;
   height: 350px;
   background: url("../img/res_soule/bg_forona_pc.jpg");
   background-size: cover;
+}
+
+#wrap .sec1 .corona_wrap .c_date {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 25px;
+  color: #333;
+  letter-spacing: -2px;
+}
+
+#wrap .sec1 .corona_wrap span {
+  position: absolute;
+  left: 50%;
+  display: inline-block;
+  min-width: 47px;
+  height: 16px;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: -0.09em;
+}
+
+#wrap .sec1 .corona_wrap span.cList_1 {
+  top: 120px;
+  margin-left: -112px;
+}
+
+#wrap .sec1 .corona_wrap span.cList_2 {
+  top: 120px;
+  margin-left: 57px;
+}
+
+#wrap .sec1 .corona_wrap span.cList_3 {
+  top: 242px;
+  margin-left: -135px;
+}
+
+#wrap .sec1 .corona_wrap span.cList_4 {
+  top: 242px;
+  margin-left: -10px;
+}
+
+#wrap .sec1 .corona_wrap span.cList_5 {
+  top: 242px;
+  margin-left: 95px;
 }
 
 #wrap .sec2 {
@@ -497,10 +611,9 @@ body {
 
 #wrap .sec4 .sec4_area .sec4_wrap ul.vist_s {
   margin: 0;
-  width: 360px;
-  height: 155px;
-  padding: 17px 5px 7px 20px;
-  list-style: disc;
+  width: 300px;
+  height: 140px;
+  padding: 30px 20px 7px 30px;
   background: #eff4f8;
 }
 
@@ -508,6 +621,17 @@ body {
   float: left;
   width: 50%;
   position: relative;
+}
+
+#wrap .sec4 .sec4_area .sec4_wrap ul.vist_s li::before {
+  content: '';
+  position: absolute;
+  background: #666666;
+  width: 2px;
+  height: 2px;
+  left: 0;
+  top: 60%;
+  margin-left: -10px;
 }
 
 #wrap .sec4 .sec4_area .sec4_wrap ul.vist_s li a {
@@ -645,7 +769,6 @@ body {
 
 .sec7 .slide .main_banner .mb_wrapper {
   height: 122px;
-  background: pink;
 }
 
 footer .inner .footer_link {
@@ -768,10 +891,6 @@ footer .inner .footer_link {
 
 .board_area1 .sns_banner ul li a.kakao {
   background-position: -200px 0;
-}
-
-.ico_main {
-  background: url("../img/res_soule/ico_main.png");
 }
 
 footer {
@@ -934,6 +1053,13 @@ footer .siteAddr .mark {
 footer .siteAddr .mark li {
   float: left;
   margin-left: 10px;
+}
+
+.swiper-pagination {
+  position: relative;
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 .board_area {
