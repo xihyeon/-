@@ -51,6 +51,10 @@ a {
   width: 100%;
 }
 
+body {
+  letter-spacing: -2px;
+}
+
 ::selection {
   background: #599100;
   color: #f1f1f1;
@@ -329,7 +333,6 @@ body {
   width: 770px;
   height: 100%;
   float: left;
-  background: red;
 }
 
 #wrap .sec1 .slide .slide_content {
@@ -350,11 +353,15 @@ body {
   width: 100%;
   height: 100%;
   padding-top: 50px;
-  background-color: #0158a8;
+  background-color: #d2e1e9;
   color: #333;
   font-weight: 600;
   text-align: center;
   box-sizing: border-box;
+}
+
+#wrap .sec1 .slide .slide_content h3 a.citi {
+  top: 175px;
 }
 
 #wrap .sec1 .slide .slide_content h3 a.on {
@@ -394,6 +401,14 @@ body {
   position: absolute;
   z-index: 100;
   background: url("../img/res_soule/icon_main.png") no-repeat 0 0;
+}
+
+#wrap .sec1 .slide .slide_content h3 a .ico_main span.citi {
+  background-position: -50px 0;
+}
+
+#wrap .sec1 .slide .slide_content .hotissue_banner {
+  overflow: hidden;
 }
 
 #wrap .sec1 .corona_wrap {
@@ -489,7 +504,8 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
-  font-size: 13px;
+  font-size: 16px;
+  letter-spacing: -2px;
 }
 
 #wrap .sec2 .m_service ul li a .ico_service {
@@ -613,13 +629,13 @@ body {
   margin: 0;
   width: 300px;
   height: 140px;
-  padding: 30px 20px 7px 30px;
+  padding: 20px 20px 7px 60px;
   background: #eff4f8;
 }
 
 #wrap .sec4 .sec4_area .sec4_wrap ul.vist_s li {
   float: left;
-  width: 50%;
+  width: calc(50% - 20px);
   position: relative;
 }
 
@@ -636,6 +652,7 @@ body {
 
 #wrap .sec4 .sec4_area .sec4_wrap ul.vist_s li a {
   font-size: 14px;
+  letter-spacing: -2px;
 }
 
 #wrap .sec4 .sec4_area .sec4_wrap p.more {
@@ -665,11 +682,13 @@ body {
 }
 
 #wrap .sec4 .sec4_area .sec4_wrap .news_item_wrap .n_item {
+  cursor: pointer;
   width: 300px;
   height: 27px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  letter-spacing: -2px;
 }
 
 #wrap .sec4 .sec4_area .sec4_wrap:first-child {
@@ -678,8 +697,9 @@ body {
 
 .sec5 {
   height: 197px;
-  padding: 60px 0 0 0;
-  border-top: 2px solid #d0d0d0;
+  margin-top: 20px;
+  padding: 30px 0 0 0;
+  border-top: 1px solid #f1f1f1;
 }
 
 .sec5 ul {
@@ -738,6 +758,7 @@ body {
   display: inline-block;
   text-align: center;
   font-size: 16px;
+  letter-spacing: -2px;
   padding-top: 100px;
 }
 
@@ -1062,6 +1083,40 @@ footer .siteAddr .mark li {
   margin-right: 10px;
 }
 
+.swiper-pagination.main_page {
+  position: absolute;
+  text-align: right;
+  margin-top: 0;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 14px;
+}
+
+figure {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+figure figcaption {
+  position: absolute;
+  z-index: 100;
+  text-align: left;
+  padding-left: 10px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 300;
+  bottom: 0;
+  line-height: 50px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #f1f1f1;
+}
+
 .board_area {
   position: relative;
   display: flex;
@@ -1343,10 +1398,4 @@ p .n_item {
   color: #7d7d7d;
   display: inline-block;
   width: 100%;
-}
-
-.bx-wrapper {
-  width: 355px;
-  height: 122px;
-  border: 0;
 }
