@@ -6,6 +6,10 @@ a{color: #222222;}
 @import "mixin.scss";
 @import "layout.scss";
 @import "component.scss";
+@import "subpage.scss";
 
 //slide
 @import "slide.scss";
+
+//page 분화
+@import "login.scss";

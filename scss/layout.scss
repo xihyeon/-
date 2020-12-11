@@ -3,7 +3,7 @@ body{
   letter-spacing: -2px;
 }
 ::selection{
-  background: #599100;
+  background: $langBorderColor;
   color: #f1f1f1;
   text-shadow: none;
 }
