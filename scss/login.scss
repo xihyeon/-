@@ -52,14 +52,15 @@
 
       }
     }
-    ul{
+    .lost_pribit_wrap{
       margin: 0 auto;
-      li{
-        float: left;
-        margin-left: 30px;
-        a{}
-      }
+
     }
   }
-
+  ul{
+    li{
+      float: left;
+      a{}
+    }
+  }
 }

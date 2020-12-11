@@ -1864,11 +1864,10 @@ body.subpage #wrap footer .siteAddr .mark li {
   color: #2292e9;
 }
 
-#login .login_input_wrap ul {
+#login .login_input_wrap .lost_pribit_wrap {
   margin: 0 auto;
 }
 
-#login .login_input_wrap ul li {
+#login ul li {
   float: left;
-  margin-left: 30px;
 }
