@@ -87,14 +87,14 @@
              <!-- 주요뉴스 -->
              <div class="slide_content slide_content1">
                <h3>
-                 <a href="#slide1" class="on">
+                 <a href="#" class="banner-btn on">
                    <i class="ico_main ico_main_news">
                      <span></span>
                    </i>
                    주요뉴스
                  </a>
                </h3>
-               <div class="hotissue_banner swiper2" id="slide1">
+               <div class="hotissue_banner on swiper2" id="slide1">
                  <ul class="swiper-wrapper">
                    <li class="swiper-slide"><figure><img src="img/hotissue/slide_hotissue01.jpg" alt="hotissue01"><figcaption>12월10일부터 전동킥보드 한강 달린다 주의해야할 점은?</figcaption></figure></li>
                    <li class="swiper-slide"><figure><img src="img/hotissue/slide_hotissue02.jpg" alt="hotissue02"><figcaption>추첨을 통해 500명에게 서울 사랑 상품권 제공!</figcaption></figure></li>
@@ -115,7 +115,7 @@
              <!-- 시민참여 -->
              <div class="slide_content slide_content2">
                <h3>
-                 <a href="#slide3" class="citi">
+                 <a href="#" class="banner-btn citi">
                    <i class="ico_main ico_main_citizen">
                      <span class="citi"></span>
                    </i>
@@ -123,7 +123,7 @@
                  </a>
                </h3>
              </div>
-             <div class="hotissue_banner swiper2" id="slide3">
+             <div class="hotissue_banner swiper2 ">
                 <ul class="swiper-wrapper">
                   <li class="swiper-slide"><img src="img/hotissue/slide_hotissue01.jpg" alt="hotissue01" ></li>
                   <li class="swiper-slide"><img src="img/hotissue/slide_hotissue02.jpg" alt="hotissue02"></li>
@@ -498,6 +498,20 @@
          stopEl: '.swiper-button-stop',
        },
      });
+
+    $(function(){
+      $(".banner-btn").click(function(){
+        if($(this).hasClass("on")){
+          $(".banner-btn").removeClass("on");
+          $(".hotissue_banner").removeClass("on");
+        }else{
+          $(this).addClass("on");
+          $(".hotissue_banner").addClass("on");
+          $(this).not($(".banner-btn")).removeClass("on");
+        }
+      });
+    });
+
    </script>
  </body>
 

@@ -310,6 +310,10 @@ body{ font-family: 'Noto Sans KR', sans-serif; letter-spacing: 3px;}
         }
         .hotissue_banner{
           overflow: hidden;
+          display: none;
+          &.on{
+            display: block;
+          }
         }
       }
     }
