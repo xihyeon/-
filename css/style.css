@@ -409,6 +409,11 @@ body {
 
 #wrap .sec1 .slide .slide_content .hotissue_banner {
   overflow: hidden;
+  display: none;
+}
+
+#wrap .sec1 .slide .slide_content .hotissue_banner.on {
+  display: block;
 }
 
 #wrap .sec1 .corona_wrap {
@@ -771,10 +776,13 @@ body {
 }
 
 .sec6 .all {
-  width: 100px;
+  width: 75px;
   display: inline;
   top: -30px;
-  padding-left: -50px;
+}
+
+.sec6 .all a {
+  text-indent: -10px;
 }
 
 .sec7 .slide {
@@ -2102,10 +2110,219 @@ body.subpage #wrap footer .siteAddr .mark li {
   padding: 55px 0 0 0;
   float: left;
   box-sizing: border-box;
-  background: red;
   text-align: left;
 }
 
 #container #lnb h2 {
   text-align: center;
+}
+
+#container .content {
+  padding: 52px 0 60px;
+  width: 912px;
+  float: right;
+  background: #fff;
+  min-height: 600px;
+}
+
+#container .content .title-wrap {
+  position: relative;
+}
+
+#container .content .title-wrap h1 {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 400;
+}
+
+#container .content .title-wrap .path {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+  margin-bottom: 58px;
+  color: #555;
+}
+
+#container .content .title-wrap .path span, #container .content .title-wrap .path a {
+  margin-left: 10px;
+  font-weight: 300;
+}
+
+#container .content .title-wrap .print {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+#container .content .title-wrap .print a {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #cccccc;
+  background: url("../img/res_soule/icon_set.png") no-repeat 5px -195px;
+  text-indent: -9999px;
+}
+
+#container .content .content_gate {
+  margin: 40px 0;
+  border: 1px solid #ddd;
+}
+
+#container .content .content_gate ul li {
+  border-bottom: 1px solid #ddd;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+#container .content .content_gate ul li .tit {
+  display: table-cell;
+  width: 170px;
+  padding: 20px 0;
+  background-color: #f4f6f7;
+  text-align: center;
+  border-right: 1px solid #ddd;
+  font-weight: bold;
+  vertical-align: middle;
+  font-style: 15px;
+}
+
+#container .content .content_gate ul li .con {
+  display: inline-block;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+#container .content .content_gate ul li .con .a-tex {
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 0 0 -15px;
+  overflow: hidden;
+}
+
+#container .content .content_gate ul li .con .a-tex a {
+  position: relative;
+  display: inline-block;
+  padding: 0 15px 0;
+  line-height: 40px;
+}
+
+#container .content .content_gate ul li .con .a-tex a.active {
+  color: #2292e9;
+}
+
+#container .content .content_gate ul li .con .a-tex a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -2px;
+  margin-top: -6px;
+  width: 1px;
+  height: 12px;
+  background-color: #ddd;
+  display: block;
+}
+
+#container .content .content_gate ul li .con .data_box {
+  display: flex;
+  width: 500px;
+  line-height: 60px;
+  justify-content: space-around;
+  float: right;
+}
+
+#container .content .content_gate ul li .con .data_box .picker .dash {
+  padding: 0 10px;
+}
+
+#container .content .content_gate ul li .con .sc_wrap {
+  display: inline-block;
+  line-height: 60px;
+}
+
+#container .content .content_gate ul li .con .sc_wrap input {
+  width: 495px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #ddd;
+}
+
+#container .content .content_gate ul li .con .sc_wrap .btn_find {
+  position: relative;
+  margin-top: 10px;
+  width: 80px;
+  height: 40px;
+  margin-left: 8px;
+  background: #fff;
+  border: 1px solid #434242;
+  text-align: center;
+  vertical-align: top;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
+#container .content .content_gate ul li .con .btn_reset {
+  position: relative;
+  margin-top: 10px;
+  width: 120px;
+  height: 40px;
+  margin-left: 8px;
+  background: #fff;
+  border: 1px solid #434242;
+  text-align: center;
+  vertical-align: top;
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+
+#container .content .news_list {
+  border-top: 2px solid #efefef;
+}
+
+#container .content .news_list .item {
+  border-bottom: 1px solid #efefef;
+}
+
+#container .content .news_list .item a {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  opacity: .8;
+  transition: .4s;
+}
+
+#container .content .news_list .item a:hover {
+  opacity: 1;
+}
+
+#container .content .news_list .item a .tbx {
+  display: table-cell;
+  vertical-align: top;
+}
+
+#container .content .news_list .item a .tbx .subject {
+  color: #434242;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#container .content .news_list .item a .tbx .date {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #818080;
+}
+
+#container .content .news_list .item a .tbx .date i {
+  font-size: 14px;
+  margin-left: 10px;
+  font-style: normal;
+}
+
+#container .content .news_list .item a .tbx .txt {
+  margin-top: 18px;
+  color: #555;
+  font-size: 16px;
+  line-height: 20px;
 }

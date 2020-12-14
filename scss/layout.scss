@@ -626,10 +626,12 @@ body{ font-family: 'Noto Sans KR', sans-serif; letter-spacing: 3px;}
     overflow: hidden;
     border-bottom: 2px solid #efefef;
     .all{
-      width: 100px;
+      width: 75px;
       display: inline;
       top: -30px;
-      padding-left: -50px;
+      a{
+        text-indent: -10px;
+      }
     }
   }
   .sec7{
