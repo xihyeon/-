@@ -247,7 +247,6 @@ body{ font-family: 'Noto Sans KR', sans-serif; letter-spacing: 3px;}
       height: 100%;
       float: left;
       .slide_content{
-        margin-left: 80px;
         h3{
           position: absolute;
           top: 0;
@@ -308,12 +307,14 @@ body{ font-family: 'Noto Sans KR', sans-serif; letter-spacing: 3px;}
             }
           }
         }
-        .hotissue_banner{
+      }
+      .hotissue_banner{
+        overflow: hidden;
+        margin-left: 80px;
+        display: none;
+        &.on{
           overflow: hidden;
-          display: none;
-          &.on{
-            display: block;
-          }
+          display: block;
         }
       }
     }

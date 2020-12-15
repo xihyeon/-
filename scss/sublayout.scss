@@ -21,6 +21,11 @@
     }
     .lnb_wrap{
       & .depth0{
+        &.on{
+          .depth{
+            display: block;
+          }
+        }
         & a{
           display: block;
           padding: 13px 22px 14px 10px;
@@ -61,6 +66,7 @@
       }
       .depth{
         display: none;
+        transition: .5s;
         &.active{
           display: block;
         }
@@ -238,11 +244,6 @@
           table-layout: fixed;
           padding: 30px 20px;
           box-sizing: border-box;
-          opacity: .8;
-          transition: .4s;
-          &:hover{
-            opacity: 1;
-          }
           .tbx{
             display: table-cell;
             vertical-align: top;

@@ -147,6 +147,7 @@ body.subpage {
           overflow: hidden;
 
           img {
+            cursor: pointer;
             position: absolute;
             width: 29px;
             height: 16px;
@@ -155,6 +156,7 @@ body.subpage {
           }
 
           .btn_TopSearch {
+            cursor: pointer;
             position: relative;
             width: 36px;
             height: 36px;
@@ -164,6 +166,9 @@ body.subpage {
             background-image: url("../img/res_soule/icon_set.png");
             background-position: -32px -99px;
             background-repeat: no-repeat;
+            &:focus{
+              outline: none;
+            }
           }
 
           input {

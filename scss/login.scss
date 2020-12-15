@@ -13,7 +13,7 @@
     color: #414647;
     line-height: 25px;
     letter-spacing: -2px;
-    font-weight: 100;
+    font-weight: 300;
   }
   // login_input_wrap
   .login_input_wrap{
@@ -46,7 +46,7 @@
       display: block;
       color: $backgroundColor;
       margin: 0 auto;
-      &:focus{
+      &:hover{
         outline: none;
         background:$backgroundColor;
         color:  $pointColor;
@@ -140,7 +140,7 @@
       box-sizing: border-box;
       border: 1px solid #dadbdb;
       &:nth-child(2) > p{
-        letter-spacing: 2px;
+        letter-spacing: -1px;
       }
       &:nth-child(2){
         width: 230px;

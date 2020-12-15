@@ -1,11 +1,6 @@
 $(function(){
   $(".depth0").click(function(){
-    if($(this).fine(".depth").has(".active")){
-      $(this).fine(".depth").addClass("active")
-      $(this).fine(".depth").removeClass("active");
-    }else{
-        $(this).fine(".depth").addClass("active")
-    }
-    $(this).toggle();
+    // $(".depth0").removeClass("on");
+    $(this).toggleClass("on");
   });
 });

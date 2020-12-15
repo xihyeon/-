@@ -335,10 +335,6 @@ body {
   float: left;
 }
 
-#wrap .sec1 .slide .slide_content {
-  margin-left: 80px;
-}
-
 #wrap .sec1 .slide .slide_content h3 {
   position: absolute;
   top: 0;
@@ -407,12 +403,14 @@ body {
   background-position: -50px 0;
 }
 
-#wrap .sec1 .slide .slide_content .hotissue_banner {
+#wrap .sec1 .slide .hotissue_banner {
   overflow: hidden;
+  margin-left: 80px;
   display: none;
 }
 
-#wrap .sec1 .slide .slide_content .hotissue_banner.on {
+#wrap .sec1 .slide .hotissue_banner.on {
+  overflow: hidden;
   display: block;
 }
 
@@ -1565,6 +1563,7 @@ body.subpage #wrap #surch_box .surch_inner .surch {
 }
 
 body.subpage #wrap #surch_box .surch_inner .surch img {
+  cursor: pointer;
   position: absolute;
   width: 29px;
   height: 16px;
@@ -1573,6 +1572,7 @@ body.subpage #wrap #surch_box .surch_inner .surch img {
 }
 
 body.subpage #wrap #surch_box .surch_inner .surch .btn_TopSearch {
+  cursor: pointer;
   position: relative;
   width: 36px;
   height: 36px;
@@ -1582,6 +1582,10 @@ body.subpage #wrap #surch_box .surch_inner .surch .btn_TopSearch {
   background-image: url("../img/res_soule/icon_set.png");
   background-position: -32px -99px;
   background-repeat: no-repeat;
+}
+
+body.subpage #wrap #surch_box .surch_inner .surch .btn_TopSearch:focus {
+  outline: none;
 }
 
 body.subpage #wrap #surch_box .surch_inner .surch input {
@@ -1829,7 +1833,7 @@ body.subpage #wrap footer .siteAddr .mark li {
   color: #414647;
   line-height: 25px;
   letter-spacing: -2px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 #login .login_input_wrap {
@@ -1867,7 +1871,7 @@ body.subpage #wrap footer .siteAddr .mark li {
   margin: 0 auto;
 }
 
-#login .login_input_wrap button:focus {
+#login .login_input_wrap button:hover {
   outline: none;
   background: #efefef;
   color: #2292e9;
@@ -1973,7 +1977,7 @@ body.subpage #wrap footer .siteAddr .mark li {
 }
 
 #s_key_wrap .key_ul .key_li:nth-child(2) > p {
-  letter-spacing: 2px;
+  letter-spacing: -1px;
 }
 
 #s_key_wrap .key_ul .key_li:nth-child(2) {
@@ -2128,6 +2132,10 @@ body.subpage #wrap footer .siteAddr .mark li {
   padding: 10px 0;
 }
 
+#container #lnb .lnb_wrap .depth0.on .depth {
+  display: block;
+}
+
 #container #lnb .lnb_wrap .depth0 a {
   display: block;
   padding: 13px 22px 14px 10px;
@@ -2166,6 +2174,7 @@ body.subpage #wrap footer .siteAddr .mark li {
 
 #container #lnb .lnb_wrap .depth {
   display: none;
+  transition: .5s;
 }
 
 #container #lnb .lnb_wrap .depth.active {
@@ -2367,12 +2376,6 @@ body.subpage #wrap footer .siteAddr .mark li {
   table-layout: fixed;
   padding: 30px 20px;
   box-sizing: border-box;
-  opacity: .8;
-  transition: .4s;
-}
-
-#container .content .news_list .item a:hover {
-  opacity: 1;
 }
 
 #container .content .news_list .item a .tbx {

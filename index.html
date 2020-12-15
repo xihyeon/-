@@ -123,15 +123,19 @@
                  </a>
                </h3>
              </div>
-             <div class="hotissue_banner swiper2 ">
-                <ul class="swiper-wrapper">
-                  <li class="swiper-slide"><img src="img/hotissue/slide_hotissue01.jpg" alt="hotissue01" ></li>
-                  <li class="swiper-slide"><img src="img/hotissue/slide_hotissue02.jpg" alt="hotissue02"></li>
-                  <li class="swiper-slide"><img src="img/hotissue/slide_hotissue03.jpg" alt="hotissue03"></li>
-                  <li class="swiper-slide"><img src="img/hotissue/slide_hotissue04.jpg" alt="hotissue04"></li>
-                  <li class="swiper-slide"><img src="img/hotissue/slide_hotissue05.jpg" alt="hotissue05"></li>
-                  <li class="swiper-slide"><img src="img/hotissue/slide_hotissue06.jpg" alt="hotissue06"></li>
-                </ul>
+             <div class="hotissue_banner on swiper2" id="slide2">
+               <ul class="swiper-wrapper">
+                 <li class="swiper-slide"><figure><img src="img/hotissue/slide_hotissue07.jpg" alt="hotissue01"><figcaption>12월10일부터 전동킥보드 한강 달린다 주의해야할 점은?</figcaption></figure></li>
+                 <li class="swiper-slide"><figure><img src="img/hotissue/slide_hotissue08.jpg" alt="hotissue02"><figcaption>추첨을 통해 500명에게 서울 사랑 상품권 제공!</figcaption></figure></li>
+                 <li class="swiper-slide"><figure><img src="img/hotissue/slide_hotissue09.jpg" alt="hotissue03"><figcaption>수도권 거리두기 2.5단계로 격상.. 12월 28일까지</figcaption></figure></li>
+                 <li class="swiper-slide"><figure><img src="img/hotissue/slide_hotissue10.jpg" alt="hotissue04"><figcaption>나눔으로 희망을 이어주세요 2021 나눔캠페인</figcaption></figure></li>
+                 <li class="swiper-slide"><figure><img src="img/hotissue/slide_hotissue11.jpg" alt="hotissue05"><figcaption>2020서울 디자인 위크</figcaption></figure></li>
+                 <li class="swiper-slide"><figure><img src="img/hotissue/slide_hotissue12.jpg" alt="hotissue06"><figcaption>시간여행자 Time Traveller 무한으로의 탐험</figcaption></figure></li>
+               </ul>
+               <!-- 네비게이션 버튼 -->
+                <div class="swiper-button-next"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                <div class="swiper-button-stop"></div><!-- 멈춤버튼-->
+                <div class="swiper-button-prev"></div><!-- 이전 버튼 -->
              </div>
 
              <!-- //시민참여 -->
@@ -499,18 +503,19 @@
        },
      });
 
-    $(function(){
-      $(".banner-btn").click(function(){
-        if($(this).hasClass("on")){
-          $(".banner-btn").removeClass("on");
-          $(".hotissue_banner").removeClass("on");
-        }else{
-          $(this).addClass("on");
-          $(".hotissue_banner").addClass("on");
-          $(this).not($(".banner-btn")).removeClass("on");
-        }
-      });
-    });
+     $(function(){
+       $(".banner-btn").click(function(){
+         $(".banner-btn").removeClass("on");
+         $(this).addClass("on");
+       });
+       // banner
+       $(".banner-btn").click(function(){
+         $(".hotissue_banner").removeClass("on");
+         if(""){
+
+         }
+       });
+     });
 
    </script>
  </body>
