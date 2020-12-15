@@ -2123,16 +2123,53 @@ body.subpage #wrap footer .siteAddr .mark li {
   border-top: 2px solid #434242;
 }
 
-#container #lnb ul li a {
+#container #lnb > ul a + ul {
+  background: #f4f6f7;
+  padding: 10px 0;
+}
+
+#container #lnb .lnb_wrap .depth0 a {
   display: block;
   padding: 13px 22px 14px 10px;
-  color: #555;
+  color: #222;
   font-size: 14px;
+  background-image: url("../img/res_soule/gray_menu.png");
+  background-repeat: no-repeat;
+  background-position: 180px 20px;
   letter-spacing: -1px;
 }
 
-#container #lnb ul li a .depth {
-  transition: .5s;
+#container #lnb .lnb_wrap .depth0 a.active a {
+  background-image: url("../img/res_soule/gray_menu.png");
+  background-repeat: no-repeat;
+  background-position: 180px 20px;
+  letter-spacing: -1px;
+}
+
+#container #lnb .lnb_wrap .depth0 a + .depth {
+  background-color: #f1f1f1;
+}
+
+#container #lnb .lnb_wrap .depth0 a + .depth a {
+  background: none;
+}
+
+#container #lnb .lnb_wrap .depth0.no-depth a {
+  background: 0;
+}
+
+#container #lnb .lnb_wrap .depth0.select > a {
+  background-image: url("../img/res_soule/on_menu.png");
+  background-color: #2292e9;
+  color: #fff;
+}
+
+#container #lnb .lnb_wrap .depth {
+  display: none;
+}
+
+#container #lnb .lnb_wrap .depth.active {
+  display: block;
 }
 
 #container .content {
