@@ -10,6 +10,25 @@
     h2{
       text-align: center;
     }
+    & > ul{
+      padding-top: 20px;
+      margin-top: 25px;
+      border-top: 2px solid $fontColorsube2;
+    }
+    ul{
+      li{
+        a{
+          display: block;
+          padding: 13px 22px 14px 10px;
+          color: #555;
+          font-size: 14px;
+          letter-spacing: -1px;
+          .depth{
+            transition: .5s;
+          }
+        }
+      }
+    }
   }
   .content{
     padding: 52px 0 60px;
@@ -102,11 +121,15 @@
             }
             .data_box{
               display: flex;
-              width: 500px;
+              width: 450px;
+              margin-left: 20px;
               line-height: 60px;
               justify-content: space-around;
               float: right;
               .picker{
+                input{
+                  width: 160px;
+                }
                 .dash{
                   padding: 0 10px;
                 }
@@ -131,8 +154,16 @@
                 border: 1px solid $fontColorsube2;
                 text-align: center;
                 vertical-align: top;
-                padding-left: 30px;
                 box-sizing: border-box;
+                &:before{
+                  content: '';
+                  display: inline-block;
+                  width: 14px;
+                  height: 14px;
+                  margin: -1px 5px 0 0;
+                  background: url("../img/res_soule/btn_search.png") no-repeat 0 0;
+                  vertical-align: middle;
+                }
               }
             }//sc_wrap
             .btn_reset{
@@ -145,8 +176,16 @@
               border: 1px solid $fontColorsube2;
               text-align: center;
               vertical-align: top;
-              padding-left: 50px;
               box-sizing: border-box;
+              &:before{
+                content: '';
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                margin: -1px 5px 0 0;
+                background: url("../img/res_soule/ic_reset.png") no-repeat 0 0;
+                vertical-align: middle;
+              }
             }
           }
         }//li
@@ -190,6 +229,70 @@
               color: #555;
               font-size: 16px;
               line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+    .page-controle{
+      text-align: center;
+      .pagination{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        margin: 30px 30px 0 0;
+        li{
+          display: block;
+          float: left;
+          a{
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            line-height: 37px;
+            border: 2px solid #fff;
+            box-sizing: border-box;
+            &.active{
+              border: 2px solid $fontColorsube2;
+            }
+          }
+        }
+        .btn_wrap{
+          display: flex;
+          justify-content: flex-end;
+          width: 100px;
+          .btn_next{
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ddd;
+            a{
+              display: block;
+              width: 40px;
+              height: 40px;
+              line-height: 37px;
+              margin: 0 0 0 5px;
+              background: url("../img/res_soule/pagenation.png") no-repeat;
+              background-size: 130px 40px;
+              box-sizing: border-box;
+              border-radius: 0;
+              background-position: -65px;
+            }
+          }
+          .btn_last{
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ddd;
+            a{
+              display: block;
+              width: 40px;
+              height: 40px;
+              line-height: 37px;
+              margin: 0 0 0 5px;
+              background: url("../img/res_soule/pagenation.png") no-repeat;
+              background-position: -95px;
+              background-size: 130px 40px;
+              box-sizing: border-box;
+              border-radius: 0;
             }
           }
         }
