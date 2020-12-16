@@ -127,6 +127,7 @@ body{ font-family: 'Noto Sans KR', sans-serif; letter-spacing: 3px;}
           margin: 30px 0 30px;
           overflow: hidden;
           img{
+            cursor: pointer;
             position: absolute;
             width: 29px;
             height: 16px;
@@ -143,6 +144,10 @@ body{ font-family: 'Noto Sans KR', sans-serif; letter-spacing: 3px;}
             background-image: url("../img/res_soule/icon_set.png");
             background-position: -32px -99px;
             background-repeat: no-repeat;
+            &:focus{
+              outline: none;
+              cursor: pointer;
+            }
           }
           input{
             position: absolute;
@@ -379,6 +384,14 @@ body{ font-family: 'Noto Sans KR', sans-serif; letter-spacing: 3px;}
     }
     .m_service{
       overflow: hidden;
+      .all{
+        width: 75px;
+        display: inline;
+        top: 60px;
+        a{
+          text-indent: -10px;
+        }
+      }
       ul{
         display: table;
         width: 100%;

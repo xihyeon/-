@@ -206,6 +206,7 @@ body {
 }
 
 #wrap #header #surch_box .surch_inner .surch img {
+  cursor: pointer;
   position: absolute;
   width: 29px;
   height: 16px;
@@ -223,6 +224,11 @@ body {
   background-image: url("../img/res_soule/icon_set.png");
   background-position: -32px -99px;
   background-repeat: no-repeat;
+}
+
+#wrap #header #surch_box .surch_inner .surch .btn_TopSearch:focus {
+  outline: none;
+  cursor: pointer;
 }
 
 #wrap #header #surch_box .surch_inner .surch input {
@@ -485,6 +491,16 @@ body {
 
 #wrap .sec2 .m_service {
   overflow: hidden;
+}
+
+#wrap .sec2 .m_service .all {
+  width: 75px;
+  display: inline;
+  top: 60px;
+}
+
+#wrap .sec2 .m_service .all a {
+  text-indent: -10px;
 }
 
 #wrap .sec2 .m_service ul {
@@ -1121,6 +1137,12 @@ figure figcaption {
   width: 100%;
   background: rgba(0, 0, 0, 0.6);
   color: #f1f1f1;
+}
+
+@media screen\0 {
+  .ie8910 {
+    property: value;
+  }
 }
 
 .board_area {
@@ -1971,7 +1993,7 @@ body.subpage #wrap footer .siteAddr .mark li {
   height: 155px;
   text-align: center;
   background: #fbfcfd;
-  padding: 20px 50px 20px 50px;
+  padding: 20px 45px 20px 45px;
   box-sizing: border-box;
   border: 1px solid #dadbdb;
 }
