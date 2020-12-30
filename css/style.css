@@ -51,6 +51,10 @@ a {
   width: 100%;
 }
 
+html, body {
+  cursor: auto;
+}
+
 body {
   letter-spacing: -2px;
 }
@@ -1137,12 +1141,6 @@ figure figcaption {
   width: 100%;
   background: rgba(0, 0, 0, 0.6);
   color: #f1f1f1;
-}
-
-@media screen\0 {
-  .ie8910 {
-    property: value;
-  }
 }
 
 .board_area {
