@@ -3,7 +3,7 @@
 
  <head>
    <meta charset="UTF-8">
-   <title>분야별 새소식 | 서울특별시</title>
+   <title>분야별 정보 | 서울특별시</title>
    <meta name="description" content="DESCRIPTION">
    <!-- css -->
    <link rel="stylesheet" href="../css/reset.css" />
@@ -14,7 +14,6 @@
      <![endif]-->
    <script src="../js/jquery.min.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-   <script src="../js/vendor.js"></script>
    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
    <script src="../js/common.js"></script>
  </head>
@@ -62,61 +61,20 @@
        <section id="container">
          <div class="inner">
            <!-- lnb-menu -->
-           <aside id="lnb">
-             <h2>서울소개</h2>
-             <ul class="lnb_wrap">
-               <li class="depth0 select">
-                 <a class="menu_allow" href="#">새소식</a>
-                 <ul class="depth ">
-                   <li><a href="#">분야별&nbsp;새소식</a></li>
-                   <li><a href="#">이달의&nbsp;행사&nbsp;및&nbsp;축제</a></li>
-                   <li><a href="#">이벤트&nbsp;신청</a></li>
-                   <li><a href="#">자치구&nbsp;주요뉴스</a></li>
-                   <li><a href="#">강좌&nbsp;교육</a></li>
-                   <li><a href="#">인사&nbsp;발령</a></li>
-                 </ul>
-               </li>
-               <li class="depth0">
-                 <a class="menu_allow" href="#">공고</a>
-                 <ul class="depth">
-                   <li><a href="#">입찰공고</a></li>
-                   <li><a href="#">수의계약내역</a></li>
-                   <li><a href="#">채용시험</a></li>
-                   <li><a href="#">서울시보</a></li>
-                   <li><a href="#">고시공고</a></li>
-                   <li><a href="#">도시계획(시행)열람공고</a></li>
-                   <li><a href="#">성면&nbsp;&middot;&nbsp;해체</a></li>
-                 </ul>
-               </li>
-               <li class="depth0">
-                 <a class="menu_allow" href="#">보도&middot;해명자료</a>
-                 <ul class="depth">
-                   <li><a href="#">보도자료</a></li>
-                   <li><a href="#">해명자료</a></li>
-                 </ul>
-               </li>
-               <li class="depth0 no-depth"><a href="#">내손안에&nbsp;거울</a></li>
-               <li class="depth0 no-depth"><a href="#">서울&nbsp;사랑</a></li>
-               <li class="depth0 no-depth"><a href="#">내친구&nbsp;서울</a></li>
-             </ul>
-           </aside>
+
            <!-- //lnb-menu -->
            <!-- ################################################# -->
            <!-- submenu content -->
            <!-- ################################################# -->
-           <div class="content">
+           <div class="content" id="content_fullsize">
              <!-- content-title -->
              <div class="title-wrap">
-               <h1>분야별&nbsp;새소식</h1>
+               <h1>분야별&nbsp;정보</h1>
                <div class="path">
                  <span>
                    <a href="#">HOME</a>
                    <span>&gt;</span>
                    <a href="#">서울소식</a>
-                   <span>&gt;</span>
-                   <a href="#">새소식</a>
-                   <span>&gt;</span>
-                   <a href="#">분야별&nbsp;새소식</a>
                  </span>
                </div>
                <div class="print">
@@ -129,7 +87,7 @@
                <ul>
                  <li>
                    <span class="tit">분야&nbsp;선택</span>
-                   <div class="con">
+                   <div class="con con_flex">
                      <div class="a-tex">
                        <a href="#" class="active">모든분야</a>
                        <a href="#">교통</a>
@@ -145,7 +103,7 @@
                  </li>
                  <li>
                    <span class="tit">기간&nbsp;선택</span>
-                   <div class="con">
+                   <div class="con con_flex">
                      <div class="a-tex">
                        <a href="#">오늘</a>
                        <a href="#">최근&nbsp;일주일</a>
@@ -166,12 +124,12 @@
                  </li>
                  <li>
                    <span class="tit">검색</span>
-                   <div class="con">
+                   <div class="con con_flex">
                      <div class="sc_wrap">
                        <input type="text">
                        <button class="btn_find">검색</button>
                      </div>
-                     <button class="btn_reset">초기화</button>
+                     <button class="btn_reset btn_reset_margin-right">초기화</button>
                    </div>
                  </li>
                </ul>
@@ -322,8 +280,8 @@
                    <div class="btn_last"><a href="#"></a></div>
                  </div>
                </ul>
-             </div>
-           </div>
+
+
            <!-- //content -->
          </div>
          <!-- //inner -->

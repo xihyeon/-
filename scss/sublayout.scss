@@ -41,6 +41,12 @@
               background-repeat: no-repeat;
               background-position: 180px 20px;
               letter-spacing: -1px;
+              &.active{
+                background-image: url("../img/res_soule/fold_menu.png");
+                background-repeat: no-repeat;
+                background-position: 180px 20px;
+                letter-spacing: -1px;
+              }
             }
           }
           &+.depth{
@@ -136,6 +142,10 @@
             display: inline-block;
             padding-left: 15px;
             box-sizing: border-box;
+            &.con_flex{
+              display: flex;
+              justify-content: space-between;
+            }
             .a-tex{
               display: inline-block;
               line-height: 60px;
@@ -220,6 +230,9 @@
               text-align: center;
               vertical-align: top;
               box-sizing: border-box;
+              &.btn_reset_margin-right{
+                margin-right: 45px;
+              }
               &:before{
                 content: '';
                 display: inline-block;

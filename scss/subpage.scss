@@ -3,6 +3,9 @@ body.subpage {
   letter-spacing: 3px;
   letter-spacing: -2px;
 
+  #content_fullsize{
+    width: 100%;
+  }
   ::selection {
     background: $langBorderColor;
     color: #f1f1f1;
@@ -408,4 +411,5 @@ body.subpage {
       }
     }
   }
+
 }
