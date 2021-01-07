@@ -250,3 +250,105 @@ p{
     width: 100%;
     }
 }
+
+.board_area1{
+  .news_soule{
+    width: 440px;
+    height: 200px;
+    .news_item_wrap{
+        overflow: hidden;
+        .n_item{
+          width: 440px;
+          height: 27px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          letter-spacing: -2px;
+          color: #555555;
+        }
+        .grenn{
+          font-weight: 400;
+        }
+      }
+    }
+  .sns_banner{
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 350px;
+    height: 195px;
+    margin-top: 15px;
+    margin-left: 22px;
+    background: url("../img/sns_list/bg_sns_list.jpg") no-repeat;
+    a.sns_list{
+      display: block;
+      width: 100%;
+      height: 100%;
+      line-height: 1.2;
+      padding: 10px 15px;
+      font-size: 22px;
+      font-weight: 700;
+      box-sizing: border-box;
+      color: #222222;
+      span{
+        display: inline-block;
+        position: relative;
+        padding-right: 50px;
+        color: #222;
+        font-size: $fontSizePrimary;
+        font-weight: 600;
+        letter-spacing: normal;
+        &::after{
+          content: '';
+          position: absolute;
+          top: -2px;
+          right: 0;
+          display: inline-block;
+          width: 34px;
+          height: 24px;
+          background: url("../img/sns_list/ico_sns_list.png") no-repeat -247px 0;
+          border-left: 1px solid #878787;
+          padding-right: 6px;
+        }
+      }
+    }
+    ul{
+      overflow: hidden;
+      position: absolute;
+      top: 90px;
+      left: 50%;
+      width: 276px;
+      height: 40px;
+      margin-left: -138px;
+      li{
+        float: left;
+        margin: 0 3px;
+        a{
+          display: block;
+          width: 40px;
+          height: 40px;
+          background: url("../img/sns_list/ico_sns_list.png") no-repeat;
+          text-indent: -9999em;
+          &.insta{
+            background-position: 0 0;
+          }
+          &.facebook{
+            background-position: -40px 0;
+          }
+          &.twitter{
+            background-position: -80px 0;
+          }
+          &.blog{
+            background-position: -120px 0;
+          }
+          &.youtube{
+            background-position: -160px 0;
+          }
+          &.kakao{
+            background-position: -200px 0;
+          }
+        }
+      }
+    }
+  }
+}
