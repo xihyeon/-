@@ -62,7 +62,7 @@
          <div class="inner">
 
            <!-- top banner / info  -->
-             
+
            <!-- //top banner /info -->
            <!-- ################################################# -->
            <!-- submenu content -->
@@ -113,7 +113,7 @@
                      <div class="data_box">
                        <div class="picker">
                          <span>
-                            <input type="date" name="data_time" value title="검색시작일입력">
+                             <input type="date"  name="data_time" value title="검색시작일입력">
                          </span>
                          <span class="dash">-</span>
                          <span>
@@ -366,6 +366,15 @@
        },
      });
    </script>
+   <!-- cdn for modernizr, if you haven't included it already -->
+  <script src="http://cdn.jsdelivr.net/webshim/1.12.4/extras/modernizr-custom.js"></script>
+  <!-- polyfiller file to detect and load polyfills -->
+  <script src="http://cdn.jsdelivr.net/webshim/1.12.4/polyfiller.js"></script>
+  <script>
+    webshims.setOptions('waitReady', false);
+    webshims.setOptions('forms-ext', {types: 'date'});
+    webshims.polyfill('forms forms-ext');
+  </script>
  </body>
 
  </html>

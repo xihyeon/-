@@ -3236,6 +3236,7 @@ button.swiper-pagination-bullet {
   text-align: center;
   vertical-align: top;
   box-sizing: border-box;
+  line-height: 30px;
 }
 
 #container .content .content_gate ul li .con .sc_wrap .btn_find:before {
